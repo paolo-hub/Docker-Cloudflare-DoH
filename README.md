@@ -48,3 +48,5 @@ The image exposes port 5353, which can be routed to the preferred host port. In 
 
 Once the container is active, you can set it up as a DNS server.
 To verify the correct configuration, you can visit Cloudflare's test site: https://one.one.one.one/help/
+
+![alt text](https://github.com/paolo-hub/Docker-Cloudflare-DoH/blob/main/1111_test.jpg?raw=true)
