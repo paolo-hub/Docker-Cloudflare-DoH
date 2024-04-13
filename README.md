@@ -1,12 +1,17 @@
-# Docker-Cloudflare-DoH
+## Docker-Cloudflare-DoH
 This is a Docker image for a ready-to-use DNS-over-HTTPS server with Cloudflare.
 
-![alt text](https://badgen.net/badge/release/v.1.0/green?) ![alt text](https://badgen.net/badge/code/Docker/blue?)
+![alt text](https://badgen.net/badge/release/v.1.0/green?) ![alt text](https://badgen.net/badge/platform/Docker/blue?)
 
-# What is this?
+## Table of contents
+* [What is this?](#what_is_this?)
+* [How to Use It](#how_to_use_it)
+* [Connection Test](#connection_test)
+
+## What is this?
 This is a ready-to-use Docker image for creating a DNS server as a container. It connects directly to Cloudflare's DoH service and requires no further configuration. It can be used as a DNS server for the home network set on various devices, as a default server for the local network, or upstream for any type of service, such as other containers or for pi-Hole.
 
-# How to Use It
+## How to Use It
 
 To run the container, you can execute it as follows:
 
@@ -32,7 +37,7 @@ services:
 
 The image exposes port 5353, which can be routed to the preferred host port. In the proposed configuration, it's set to the default port for DNS servers, port 53.
 
-# Connection Test
+## Connection Test
 
 Once the container is active, you can set it up as a DNS server.
 To verify the correct configuration, you can visit Cloudflare's test site: https://one.one.one.one/help/
