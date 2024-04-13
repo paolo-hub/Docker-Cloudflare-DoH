@@ -9,6 +9,15 @@ This is a ready-to-use Docker image for creating a DNS server as a container. It
 
 ## How to Use It
 
+# Supported Platforms
+
+The image is available on Docker Hub page at https://hub.docker.com/repository/docker/paolo83/cloudflare-doh The supported platforms are:
+- linux/amd64
+- linux/arm/v7
+- linux/arm64
+
+# Creating and running a container
+
 To run the container, you can execute it as follows:
 ```
 docker run -d \
