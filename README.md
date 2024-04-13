@@ -6,7 +6,7 @@ This is a Docker image for a ready-to-use DNS-over-HTTPS server with Cloudflare.
 ## Table of contents
 * [What is this?](#what is this?)
 * [How to Use It](#how to use it)
-* [Connection Test](#connection test)
+* [Connection Test](#connectiontest)
 
 ## What is this?
 This is a ready-to-use Docker image for creating a DNS server as a container. It connects directly to Cloudflare's DoH service and requires no further configuration. It can be used as a DNS server for the home network set on various devices, as a default server for the local network, or upstream for any type of service, such as other containers or for pi-Hole.
