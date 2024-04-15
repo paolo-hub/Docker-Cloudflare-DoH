@@ -24,7 +24,7 @@ To launch the container, simply execute the following command:
 ```
 docker run -d \
   --name cloudflare-doh \
-  -p 53:5353/udp \
+  -p 53:53/udp \
   --restart unless-stopped \
   paolo83/cloudflare-doh:latest
 ```
