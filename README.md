@@ -48,6 +48,6 @@ The image exposes port 53, which can be mapped to the desired host port. In the 
 
 # Connection Test
 
-After the container is up and running, you can configure it as a DNS server. To confirm proper configuration, you can visit Cloudflare's test site at: ![](https://one.one.one.one/help/)
+After the container is up and running, you can configure it as a DNS server. To confirm proper configuration, you can visit ![Cloudflare's test site](https://one.one.one.one/help/)
 
 ![alt text](https://github.com/paolo-hub/Docker-Cloudflare-DoH/blob/main/1111_test.jpg?raw=true)
