@@ -1,11 +1,11 @@
 # Docker-Cloudflare-DoH
 This is a Docker image for a ready-to-use DNS-over-HTTPS server with Cloudflare.
 
-![alt text](https://badgen.net/badge/release/v.1.0/green?) ![alt text](https://badgen.net/badge/platform/Docker/blue?)
+![alt text](https://badgen.net/badge/release/v.1.1/green?) ![alt text](https://badgen.net/badge/platform/Docker/blue?)
 
 
 # What is this?
-This is a ready-to-use Docker image for creating a DNS server as a container. It connects directly to Cloudflare's DoH service and requires no further configuration. It can be used as a DNS server for the home network set on various devices, as a default server for the local network, or upstream for any type of service, such as other containers or for pi-Hole.
+This Docker image is pre-configured for setting up a DNS server within a container. It seamlessly links to Cloudflare's DoH service, eliminating the need for additional setup. It's versatile, serving as a DNS server for home networks across different devices, acting as the default server for local networks, or serving upstream for various services like other containers or pi-Hole.
 
 # How to Use It
 
@@ -20,7 +20,7 @@ The supported platforms are:
 
 ## Creating and running a container
 
-To run the container, you can execute it as follows:
+To launch the container, simply execute the following command:
 ```
 docker run -d \
   --name cloudflare-doh \
@@ -29,7 +29,7 @@ docker run -d \
   paolo83/cloudflare-doh:latest
 ```
 
-You can also use the following Docker Compose file:
+You can alternatively utilize the following Docker Compose file:
 ```
 version: "3.9"
 services:
@@ -37,18 +37,17 @@ services:
     container_name: cloudflare-doh
     image: paolo83/cloudflare-doh:latest
     ports:
-      - target: 5353
+      - target: 53
         published: 53
         protocol: udp
         mode: host
     restart: unless-stopped
 ```
 
-The image exposes port 5353, which can be routed to the preferred host port. In the proposed configuration, it's set to the default port for DNS servers, port 53.
+The image exposes port 53, which can be mapped to the desired host port. In the suggested configuration, it's configured to the standard port for DNS servers, port 53.
 
 # Connection Test
 
-Once the container is active, you can set it up as a DNS server.
-To verify the correct configuration, you can visit Cloudflare's test site: https://one.one.one.one/help/
+After the container is up and running, you can configure it as a DNS server. To confirm proper configuration, you can visit Cloudflare's test site at: ![](https://one.one.one.one/help/)
 
 ![alt text](https://github.com/paolo-hub/Docker-Cloudflare-DoH/blob/main/1111_test.jpg?raw=true)
