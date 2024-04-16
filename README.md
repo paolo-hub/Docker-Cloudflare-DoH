@@ -18,6 +18,25 @@ The supported platforms are:
   * linux/arm/v7
   * linux/arm64
 
+## OPTIONAL: Build Your Own Image
+
+If you prefer, you can build the image locally.
+
+Clone the Git repository to your local machine:
+
+```bash
+git clone https://github.com/paolo-hub/Docker-Cloudflare-DoH.git
+```
+Navigate into the cloned repository directory:
+```
+cd Docker-Cloudflare-DoH
+```
+Then, build the Docker image using the provided Dockerfile:
+```
+docker build -t paolo83/cloudflare-doh:latest -f Dockerfile .
+```
+
+
 ## Creating and running a container
 
 To launch the container, simply execute the following command:
