@@ -4,12 +4,12 @@ This is a Docker image for a ready-to-use DNS-over-HTTPS server with Cloudflare.
 ![alt text](https://badgen.net/badge/release/v.1.1/green?) ![alt text](https://badgen.net/badge/platform/Docker/blue?)
 
 
-# What is this?
+## What is this?
 This Docker image is pre-configured for setting up a DNS server within a container. It seamlessly links to Cloudflare's DoH service, eliminating the need for additional setup. It's versatile, serving as a DNS server for home networks across different devices, acting as the default server for local networks, or serving upstream for various services like other containers or pi-Hole.
 
-# How to Use It
+## How to Use It
 
-## Supported Platforms
+### Supported Platforms
 
 The image is available on [Docker Hub page](https://hub.docker.com/repository/docker/paolo83/cloudflare-doh)
 
@@ -18,7 +18,7 @@ The supported platforms are:
   * linux/arm/v7
   * linux/arm64
 
-## OPTIONAL: Build Your Own Image
+### OPTIONAL: Build Your Own Image
 
 If you prefer, you can build the image locally.
 
@@ -28,19 +28,19 @@ Clone the Git repository to your local machine:
 git clone https://github.com/paolo-hub/Docker-Cloudflare-DoH.git
 ```
 Navigate into the cloned repository directory:
-```
+```bash
 cd Docker-Cloudflare-DoH
 ```
 Then, build the Docker image using the provided Dockerfile:
-```
+```bash
 docker build -t paolo83/cloudflare-doh:latest -f Dockerfile .
 ```
 
 
-## Creating and running a container
+### Creating and running a container
 
 To launch the container, simply execute the following command:
-```
+```bash
 docker run -d \
   --name cloudflare-doh \
   -p 53:53/udp \
