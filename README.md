@@ -1,7 +1,7 @@
 # Docker-Cloudflare-DoH
 This is a Docker image for a ready-to-use DNS-over-HTTPS server with Cloudflare.
 
-![alt text](https://badgen.net/badge/release/v.1.1/green?) ![alt text](https://badgen.net/badge/platform/Docker/blue?) ![alt text](https://badgen.net/badge/license/GPL-3.0/orange?)
+![alt text](https://badgen.net/badge/release/v.1.1/green?) ![alt text](https://badgen.net/badge/platform/Docker/blue?) ![alt text](https://badgen.net/badge/license/MIT/orange?)
 
 
 ## What is this?
